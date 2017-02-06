@@ -1,0 +1,17 @@
+mov1 3 r0
+mov1 0 r5
+psh1 0
+dec r0
+psh1 1
+dec r0
+l0:
+pop r1
+pop r2
+add r1 r2
+psh2 r1
+psh2 r2
+dec r0
+cmp r5 r0
+jnz l0
+add r1 r2
+hlt
